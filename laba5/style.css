@@ -1,0 +1,21 @@
+#valid_form{
+    margin: 30px;
+    padding: 30px;
+    width:220px;
+    background-color: lightsteelblue;
+}
+#valid_form input{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid lightsteelblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", serif;
+}
+
+#valid_form input[type=submit]{
+    background-color: cornflowerblue;
+    font-size: 16px;
+    font-weight: 700;
+}
