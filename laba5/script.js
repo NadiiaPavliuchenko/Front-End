@@ -47,4 +47,33 @@ form.addEventListener('submit', function (event) {
     }
 })
 
+let cell = document.getElementById("24");
 
+function r() {
+    return Math.floor(Math.random() * 255)
+}
+
+cell.addEventListener('mouseenter', function (event){
+    event.preventDefault();
+    cell.style.background = 'rgb(' + r() + "," + r() + "," + r() + ')';
+})
+
+cell.addEventListener('click', function (event){
+    event.preventDefault();
+    cell.style.background = document.getElementById('color_picker').value;
+})
+
+cell.addEventListener('dblclick', function(event){
+    event.preventDefault();
+    let table = document.querySelector('#table');
+
+    for (let i = 0; i < table.rows.length; i++) {
+        let row = table.rows[i];
+        let cols = table.rows[i].querySelectorAll('td');
+        for (let j = 0; j < cols.length; j++) {
+            if (j === table.rows.length - i - 1) {
+                row.cells[j].style.background = document.getElementById('color_picker').value;
+            }
+        }
+    }
+})
