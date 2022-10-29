@@ -9,34 +9,34 @@
 </head>
 <body>
 <div id="valid_form">
-    <form method="post">
+    <form action="" method="post" class="validateFields">
         <label>
-            <input type="text" placeholder="ПІБ" name="pib" value="">
+            <input type="text" placeholder="ПІБ" id="pib">
         </label>
         <br>
         <label>
-            <input type="text" placeholder="Варіант" name="variant" value="">
+            <input type="text" placeholder="Варіант" id="variant" maxlength="2">
         </label>
         <br>
         <label>
-            <input type="text" placeholder="Група" name="group" value="">
+            <input type="text" placeholder="Група" id="Group">
         </label>
         <br>
         <label>
-            <input type="text" placeholder="Факультет" name="faculty" value="">
+            <input type="text" placeholder="Факультет" id="faculty">
         </label>
         <br>
         <label>
-            <input type="text" placeholder="Дата народження" name="birthday" value="">
+            <input type="text" placeholder="Дата народження" id="birthday">
         </label>
         <br>
         <label>
-            <input type="submit" value="Відправити" name="Submit">
+            <input type="submit" value="Відправити">
         </label>
     </form>
 </div>
-
+<div id="result">
+</div>
 </body>
 </html>
-
-
+<script src="script.js"></script>
