@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+header {
+    background-image: url('./images/header2.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+#top-bar {
+    height: auto;
+    font-size: 14px;
+    background-color: darkturquoise;
+    color: white;
+    display: flex;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.info {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.icons{
+    margin: auto;
+    height: 10%;
+    width: 10%;
+}
+#menu{
+    display: flex;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 100%;
+    opacity: 80%;
+    height: auto;
+}
+#dws-menu{
+    margin: auto;
+    position: relative;
+}
+#dws-menu [type="checkbox"]{
+    display: none;
+}
+#dws-menu label.toggleMenu{
+    background: coral;
+    display: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+#dws-menu label.toggleMenu .fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.menu_box a{
+    border-radius: 5px;
+    padding: 8px 15px 8px;
+    text-decoration: none;
+    color: black;
+}
+.menu_box a:hover {
+    background-color: coral;
+    transition-duration: 1s;
+}
+#logo {
+    font-family: "Copperplate Gothic Bold", sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 40px;
+    padding: 8px 15px 8px;
+    margin-left: 10%;
+}
+#v1 {
+    border-left: 1px solid white;
+    margin: auto 0 auto 0;
+    height: 24px;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+}
+#buttons p:hover {
+    background-color: aqua;
+    transition-duration: 1s;
+}
+#buttons p{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px 15px 8px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    float: left;
+    width: 35%;
+    padding: 20px;
+    margin: auto 80px;
+}
+.text button{
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: darkturquoise;
+    height: 30px;
+    width: 180px;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    float: right;
+    width: 75%;
+    margin: auto;
+}
+.text p, .text h1, .text button, .text2 p, .text2 h1, .text2 button, #services h1{
+    margin: 10px;
+}
+.text h1, .text2 h1, #services h1{
+    font-size: 50px;
+}
+#buttons_2{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 520px;
+    margin: 10px;
+}
+#content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#top-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#top-content img{
+    width: 25%;
+    margin: 0 0 0 120px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+}
+#consultation{
+    display: flex;
+    flex-direction: column;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    background-color: white;
+    float: right;
+    margin: 0 200px 0 0;
+    padding: 50px;
+}
+.wrapper{
+    display: flex;
+    width: 500px;
+    margin: auto;
+    flex-direction: column;
+}
+.blue{
+    color: darkturquoise;
+    font-size: 12px;
+    padding: 10px 0;
+}
+#colortext {
+    color: darkturquoise;
+}
+#button1{
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: darkturquoise;
+    height: 30px;
+    width: 180px;
+}
+.slogan {
+    color: grey;
+    font-size: 13px;
+}
+#button2{
+    background-color: coral;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+#consultation input[type=submit]{
+    background-color: coral;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+#middle-content{
+    background-color: whitesmoke;
+}
+#consultation input, #consultation select, #consultation textarea{
+    border-color: lightgrey;
+    color: grey;
+    border-radius: 18px;
+    border-width: 1px;
+    padding: 8px;
+    margin: 7px;
+    width: 250px;
+}
+#services{
+    float: left;
+    margin: 60px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 240px;
+    margin: 10px;
+}
+.card img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.title{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#middle-photo{
+    background-image: url('./images/photo3.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    font-family: 'MS Reference Sans Serif', sans-serif;
+    height: 400px;
+    background-size: cover;
+}
+#middle-photo div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#title2{
+    color: white;
+    font-weight: 700;
+    margin: 10px auto;
+    font-size: 50px;
+}
+#slogan2{
+    color: white;
+    margin: 10px auto;
+    font-size: 14px;
+}
+#middle-photo button{
+    margin: 10px auto;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 180px;
+}
+#bottom-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#bottom-table, td{
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: 15px;
+}
+#bottom-table{
+    border-collapse: collapse;
+    height: 100%;
+}
+#bottom-table p, #bottom-table img{
+    margin: 5px 0;
+}
+
+@media all and (max-width: 1280px) {
+    #dws-menu label.toggleMenu{
+        background: #C9C9C9;
+        display: none;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+

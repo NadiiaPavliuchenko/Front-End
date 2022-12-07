@@ -1,0 +1,87 @@
+@media all and (max-width: 390px) {
+    #top-bar{
+        font-size: 12px;
+    }
+    #buttons p{
+        padding: 8px 4px 8px;
+    }
+    #dws-menu{
+        overflow: hidden;
+    }
+    .menu_box{
+        visibility: hidden;
+        display: block;
+        position: fixed;
+        right: -100%;
+        width: 156px;
+        height: 100%;
+        padding: 20px 0;
+        background-color: lightgrey;
+    }
+    #dws-menu label.toggleMenu{
+        display: block;
+    }
+    input.toggleMenu:checked ~ .menu_box{
+        visibility: visible;
+        right: 0;
+    }
+    .menu_box a:hover{
+        background: none;
+        transition-duration: 0s;
+    }
+    .menu_box a{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo{
+        margin-left: 3%;
+    }
+    .text{
+        width: 100%;
+        margin: auto;
+    }
+    .text h1, #services h1{
+        font-size: 40px;
+    }
+    .text2 h1{
+        font-size: 30px;
+    }
+    .wrapper{
+        width: 300px;
+        margin: 0;
+    }
+    #buttons_2{
+        margin: 0;
+    }
+    #top-content img{
+        margin: 0;
+    }
+    #middle-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #consultation{
+        width: 100%;
+    }
+    #services{
+        margin: auto;
+    }
+    #cards{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    #title2{
+        font-size: 40px;
+        text-align: center;
+    }
+    #slogan2{
+        text-align: center;
+    }
+    #photo4 {
+        display: none;
+    }
+    #bottom-content{
+        flex-direction: column-reverse;
+    }
+}
